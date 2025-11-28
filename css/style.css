@@ -1,1 +1,55 @@
 /* Denna fil skall innehålla din CSS kod */
+/* LANDING SITE*/
+
+#wrapper {
+    display:grid;
+    min-height: 97vh;
+    grid-template-areas:
+    "nv nv nv"
+    "hd hd hd"
+    "sc sc as"
+    "ft ft ft";
+    grid-template-rows: 1fr 3fr 7fr
+}
+
+#nv {
+    display:flex;
+    grid-area: nv;
+    background-color: #f6efe8;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 3vh;
+    padding-right: 3vh;
+
+}
+
+#hd {
+    display:flex;
+    grid-area: hd;
+    background-image:url(/img/coffe.jpg);
+    filter: blur();
+    background-size: 100%;
+    background-position-y: 25vh;
+    font-size:5vh ;
+    color: #f6efe8;
+    justify-content: center;
+    align-items: center;
+}
+
+#sc {
+    grid-area: sc;
+}
+
+#as {
+    grid-area: as;
+}
+
+#ft {
+    grid-area: ft;
+    background-color: #f6efe8;
+}
+
+#l1, #l2, #l3 {
+    color:
+}
