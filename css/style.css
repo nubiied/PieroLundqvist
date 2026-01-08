@@ -23,8 +23,8 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding-left: 3vh;
-    padding-right: 3vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
 }
 
 #hd {
@@ -44,16 +44,34 @@ body {
 #sc {
     grid-area: sc;
     background-color: #f6efe8;
+    padding: 1vh;
 }
 
 #as {
     grid-area: as;
     background-color: #b58b63;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bild1 {
+    display: flex;
+    width: 36vh;
+    align-items: center;
+    justify-content: center;
+    padding:5vh
+
 }
 
 #ft {
+    display:flex;
     grid-area: ft;
-    background-color: #f6efe8;
+    background-color:#f6efe8;
+    padding:2vh;
+    justify-content:space-between;
+    align-items: center;
 }
 
 #l1, #l2, #l3 {
@@ -62,3 +80,41 @@ body {
 }
 
 /* OM OSS */
+
+#wrapper2 {
+    display:grid;
+    grid-template-areas: 
+    "nv nv nv"
+    "hd2 hd2 hd2"
+    "sc2 sc2 sc2"
+    "ft ft ft";
+    grid-template-rows: 2fr 9fr 12fr 2fr;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+#hd2 {
+    grid-area: hd2;
+    background-image:url(/img/coffee-bar.jpg);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vh;
+    color: #f6efe8;
+    background-size: 100%;
+    background-position-y: 75vh;
+
+}
+
+#hdb {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:3vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border-radius: 3vh;
+}
+
+#sc2{
+    grid-area:sc2;
+    background-color:#f6efe8;
+    padding: 1vh
+}
